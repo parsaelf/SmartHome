@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangles Example</title>
+    <!-- <link rel="stylesheet" href="/static/css/stylesheet.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/AccountStyleSheet.css')}}">
+</head>
+<body>
+  <div id="token" data-token="{{ token }}"></div>
+  <div id="email" data-email="{{ email }}"></div>
+  <div id="phone" data-phone="{{ phone }}"></div>
+  <div id="name" data-name="{{ name }}"></div>
+  <!-- start code search box -->
+    <div class="cl1">
+        <div class="cl2">
+          <div class="cl3">
+            <div class="cl4">
+              <div class="cl5">
+                <input type="text" class="search-box" placeholder="Search...">
+              </div>
+            </div>
+            <!-- end code search box -->
+            <div class="cl8">
+              <div class="cl9"></div>
+              <img class="cl10" src="{{url_for('static', filename='img/bell-regular-24(1).png')}}" />
+              <div class="cl11"></div>
+            </div>
+            <div class="cl12">
+              <div class="cl13"></div>
+              <img class="cl14" src="{{url_for('static', filename='img/cog-regular-24(2).png')}}" />
+            </div>
+            <div class="cl15">
+              <div class="cl16">{{ name }}</div>
+              <div class="cl17">
+                <div class="cl18"></div>
+                <div class="cl19"></div>
+              </div>
+              <img class="cl20" src="{{url_for('static', filename='img/menu-alt-right-regular-24.png')}}" />
+            </div>
+          </div>
+        </div>
+        <div class="cl21">
+          <div class="cl22">
+            <!-- code a html -->
+        <!-- start fr1 code -->
+          <div class="frameleft" id="fr1">
+            <!-- start Body fr1 code -->
+            <div style="width: 485px; height: 923px; left: 955px; top: 101px; position: absolute">
+              <div style="width: 485px; height: 903px; left: 0px; top: 0px; position: absolute; background: #F5F5F5; border-top-left-radius: 30px; border: 1px rgba(236.70, 236.70, 244.50, 0.60) solid"></div>
+              <div style="width: 425px; height: 291px; left: 30px; top: 25px; position: absolute">
+                <div style="width: 425px; height: 237px; left: 0px; top: 54px; position: absolute">
+                  <div style="width: 425px; height: 110px; left: 0px; top: 0px; position: absolute">
+                    <div id="pirSensor" class="sensor-box pir-sensor" style="width: 204px; height: 110px; left: 0px; top: 0px; position: absolute">
+                      <div style="width: 204px; height: 110px; left: 0px; top: 0px; position: absolute; background: #7A40F2; border-radius: 22px"></div>
+                      <div style="width: 182px; height: 72px; left: 8px; top: 19px; position: absolute">
+                          <div style="left: 12px; top: 54px; position: absolute; color: white; font-size: 16px; font-family: Muli; font-weight: 700; line-height: 18px; letter-spacing: 0.16px; word-wrap: break-word">PIR</div>
+                        <div style="width: 28px; height: 16px; left: 154px; top: 14px; position: absolute">
+                        </div>
+                        <img class="cl37" src="{{url_for('static', filename='img/run-regular-24.png')}}" />
+                      </div>
+                    </div>
+                    <div id="tempSensor" class="sensor-box temp-sensor" style="width: 204px; height: 110px; left: 221px; top: 0px; position: absolute">
+                      <div style="width: 204px; height: 110px; left: 0px; top: 0px; position: absolute; background: #F4C427; border-radius: 22px"></div>
+                      <div style="width: 178px; height: 72px; left: 12px; top: 19px; position: absolute">
+                        <div style="left: 5px; top: 54px; position: absolute; color: white; font-size: 16px; font-family: Muli; font-weight: 700; line-height: 18px; letter-spacing: 0.16px; word-wrap: break-word">Router</div>
+                        <div style="width: 28px; height: 16px; left: 150px; top: 14px; position: absolute">
+                        </div>
+                        <img class="cl38" src="{{url_for('static', filename='img/server-solid-24.png')}}" />
+                      </div>
+                    </div>
+                  </div>
+                  <div style="width: 425px; height: 110px; left: 0px; top: 127px; position: absolute">
+                    <div id="strikeSensor" class="sensor-box strike-sensor"style="width: 204px; height: 110px; left: 0px; top: 0px; position: absolute">
+                      <div style="width: 204px; height: 110px; left: 0px; top: 0px; position: absolute; background: #FF9060; border-radius: 22px"></div>
+                      <div style="width: 179px; height: 72px; left: 11px; top: 19px; position: absolute">
+                        <div style="left: 9px; top: 54px; position: absolute; color: white; font-size: 16px; font-family: Muli; font-weight: 700; line-height: 18px; letter-spacing: 0.16px; word-wrap: break-word">Sensor Strike</div>
+                        <div style="width: 28px; height: 16px; left: 151px; top: 14px; position: absolute">
+                        </div>
+                        <img class="cl39" src="{{url_for('static', filename='img/windows-logo-24.png')}}" />
+                      </div>
+                    </div>
+                    <div id="batterysensor" class="sensor-box battery-sensor" style="width: 204px; height: 110px; left: 221px; top: 0px; position: absolute">
+                      <div style="width: 204px; height: 110px; left: 0px; top: 0px; position: absolute; background: #3ACBE9; border-radius: 22px"></div>
+                      <div style="width: 178px; height: 72px; left: 12px; top: 19px; position: absolute">
+                        <div style="left: 5px; top: 54px; position: absolute; color: white; font-size: 16px; font-family: Muli; font-weight: 700; line-height: 18px; letter-spacing: 0.16px; word-wrap: break-word">Power saving</div>
+                        <div style="width: 28px; height: 16px; left: 150px; top: 14px; position: absolute">
+                        </div>
+                        <img class="cl40" src="{{url_for('static', filename='img/battery-charging-solid-24.png')}}" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="width: 425px; height: 36px; left: 0px; top: 0px; position: absolute">
+                  <div style="left: 0px; top: 3px; position: absolute; color: #242424; font-size: 18px; font-family: Muli; font-weight: 600; line-height: 30px; letter-spacing: 0.77px; word-wrap: break-word">My Devices</div>
+                  <div style="width: 82px; height: 36px; left: 287px; top: 0px; position: absolute">
+                    <div style="width: 82px; height: 36px; left: 0px; top: 0px; position: absolute; background: #EDEEF4; border-radius: 10px"></div>
+                    <div style="left: 14px; top: 9px; position: absolute; color: #242424; font-size: 14px; font-family: Muli; font-weight: 600; line-height: 18px; letter-spacing: 0.14px; word-wrap: break-word">ON</div>
+                    <img class="cl57" src="{{url_for('static', filename='img/chevron-down-regular-24.png')}}" />
+                  </div>
+                  <div style="width: 36px; height: 36px; left: 389px; top: 0px; position: absolute; transform: rotate(90deg); transform-origin: 0 0">
+                    <div style="width: 36px; height: 36px; left: 0px; top: 0px; position: absolute; background: #EDEEF4; border-radius: 10px"></div>
+                    <img class="cl56" src="{{url_for('static', filename='img/chevron-left-regular-24.png')}}" />
+                  </div>
+                </div>
+              </div>
+              <div style="width: 426px; height: 178px; left: 30px; top: 339px; position: absolute">
+                <div style="width: 426px; height: 36px; left: 0px; top: 0px; position: absolute">
+                  <div style="left: 0px; top: 3px; position: absolute; color: #242424; font-size: 18px; font-family: Muli; font-weight: 600; line-height: 30px; letter-spacing: 0.77px; word-wrap: break-word">Members</div>
+                  <div style="width: 36px; height: 36px; left: 390px; top: 0px; position: absolute; transform: rotate(90deg); transform-origin: 0 0">
+                    <div style="width: 36px; height: 36px; left: 0px; top: 0px; position: absolute; background: #EDEEF4; border-radius: 10px"></div>
+                    <img class="cl56" src="{{url_for('static', filename='img/chevron-left-regular-24.png')}}" />
+                  </div>
+                </div>
+                <div style="width: 426px; height: 127px; left: 0px; top: 51px; position: absolute">
+                  <div style="width: 426px; height: 127px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 28px; border: 1px rgba(230.07, 229.16, 241.80, 0.81) solid"></div>
+                  <div style="width: 383px; height: 91px; left: 20px; top: 18px; position: absolute">
+                    <div style="width: 51px; height: 91px; left: 0px; top: 0px; position: absolute">
+                      <div style="left: 8px; top: 73px; position: absolute; color: #9897AD; font-size: 11px; font-family: Muli; font-weight: 600; line-height: 18px; letter-spacing: 0.11px; word-wrap: break-word">Admin</div>
+                      <div style="left: 1px; top: 53px; position: absolute; color: black; font-size: 13px; font-family: Muli; font-weight: 600; line-height: 18px; letter-spacing: 0.13px; word-wrap: break-word">{{ name }}</div>
+                      <div style="width: 51px; height: 52.02px; left: 0px; top: 0px; position: absolute">
+                        <div style="width: 51px; height: 52.02px; left: 0px; top: 0px; position: absolute"></div>
+                        <img class="cl41" src="{{url_for('static', filename='img/Group 52.png')}}" />
+                      </div>
+                    </div>
+                    <div style="width: 59px; height: 91px; left: 75px; top: 0px; position: absolute">
+                      <div style="left: 0px; top: 73px; position: absolute; color: #9897AD; font-size: 11px; font-family: Muli; font-weight: 600; line-height: 18px; letter-spacing: 0.11px; word-wrap: break-word">Full Access</div>
+                      <div style="left: 9px; top: 53px; position: absolute; color: black; font-size: 13px; font-family: Muli; font-weight: 600; line-height: 18px; letter-spacing: 0.13px; word-wrap: break-word">Nariya</div>
+                      <div style="width: 51px; height: 52.02px; left: 4px; top: 0px; position: absolute">
+                        <div style="width: 51px; height: 52.02px; left: 0px; top: 0px; position: absolute"></div>
+                        <img class="cl42" src="{{url_for('static', filename='img/Group 512.png')}}" />
+                      </div>
+                    </div>
+                    <div style="width: 59px; height: 91px; left: 158px; top: 0px; position: absolute">
+                      <div style="left: 0px; top: 73px; position: absolute; color: #9897AD; font-size: 11px; font-family: Muli; font-weight: 600; line-height: 18px; letter-spacing: 0.11px; word-wrap: break-word">Full Access</div>
+                      <div style="left: 16px; top: 53px; position: absolute; text-align: center; color: black; font-size: 13px; font-family: Muli; font-weight: 600; line-height: 18px; letter-spacing: 0.13px; word-wrap: break-word">Riya</div>
+                      <div style="width: 51px; height: 52.02px; left: 4px; top: 0px; position: absolute">
+                        <div style="width: 51px; height: 52.02px; left: 0px; top: 0px; position: absolute"></div>
+                        <img class="cl43" src="{{url_for('static', filename='img/Group 5112.png')}}" />
+                      </div>
+                    </div>
+                    <div style="width: 59px; height: 91px; left: 241px; top: 0px; position: absolute">
+                      <div style="left: 0px; top: 73px; position: absolute; color: #9897AD; font-size: 11px; font-family: Muli; font-weight: 600; line-height: 18px; letter-spacing: 0.11px; word-wrap: break-word">Full Access</div>
+                      <div style="left: 16.50px; top: 53px; position: absolute; text-align: center; color: black; font-size: 13px; font-family: Muli; font-weight: 600; line-height: 18px; letter-spacing: 0.13px; word-wrap: break-word">Dad</div>
+                      <div style="width: 51px; height: 52.02px; left: 4px; top: 0px; position: absolute">
+                        <div style="width: 51px; height: 52.02px; left: 0px; top: 0px; position: absolute"></div>
+                        <img class="cl44" src="{{url_for('static', filename='img/Group 51112.png')}}" />
+                      </div>
+                    </div>
+                    <div style="width: 59px; height: 91px; left: 324px; top: 0px; position: absolute">
+                      <div style="left: 0px; top: 73px; position: absolute; color: #9897AD; font-size: 11px; font-family: Muli; font-weight: 600; line-height: 18px; letter-spacing: 0.11px; word-wrap: break-word">Full Access</div>
+                      <div style="left: 14.50px; top: 53px; position: absolute; text-align: center; color: black; font-size: 13px; font-family: Muli; font-weight: 600; line-height: 18px; letter-spacing: 0.13px; word-wrap: break-word">Mom</div>
+                      <div style="width: 51px; height: 52.02px; left: 4px; top: 0px; position: absolute">
+                        <div style="width: 51px; height: 52.02px; left: 0px; top: 0px; position: absolute"></div>
+                        <img class="cl45" src="{{url_for('static', filename='img/Group 5211.png')}}" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="width: 425px; height: 36px; left: 30px; top: 542px; position: absolute">
+                <div style="width: 425px; height: 36px; left: 0px; top: 0px; position: absolute">
+                  <div style="left: 0px; top: 3px; position: absolute; color: #242424; font-size: 18px; font-family: Muli; font-weight: 600; line-height: 30px; letter-spacing: 0.77px; word-wrap: break-word">Power Consumed</div>
+                  <div style="width: 123px; height: 36px; left: 246px; top: 0px; position: absolute">
+                    <div style="width: 123px; height: 36px; left: 0px; top: 0px; position: absolute; background: #EDEEF4; border-radius: 10px"></div>
+                    <div style="left: 36px; top: 9px; position: absolute; color: #242424; font-size: 14px; font-family: Muli; font-weight: 600; line-height: 18px; letter-spacing: 0.14px; word-wrap: break-word">Month</div>
+                    <img class="cl59" src="{{url_for('static', filename='img/calendar-exclamation-regular-24.png')}}">
+                    <img class="cl58" src="{{url_for('static', filename='img/chevron-down-regular-24.png')}}">
+                  </div>
+                  <div style="width: 36px; height: 36px; left: 389px; top: 0px; position: absolute; transform: rotate(90deg); transform-origin: 0 0">
+                    <div style="width: 36px; height: 36px; left: 0px; top: 0px; position: absolute; background: #EDEEF4; border-radius: 10px"></div>
+                    <img class="cl56" src="{{url_for('static', filename='img/chevron-left-regular-24.png')}}">
+                  </div>
+                </div>
+              </div>
+              <img class="cl52" src="{{url_for('static', filename='img/Path 2 + Path 2 + Path 2 + Path 2 + Path 2 + Path 3 + Path 3 Mask.png')}}" />
+            </div>
+            <div style="width: 837px; height: 916px; left: 118px; top: 101px; position: absolute">
+              <img class="cl46" src="{{url_for('static', filename='img/Path.png')}}" />
+              <div style="width: 743px; height: 666px; left: 47px; top: 250px; position: absolute">
+                <img class="cl47" src="{{url_for('static', filename='img/Group 36.png')}}" />
+                <div style="width: 743px; height: 39.56px; left: 0px; top: 0px; position: absolute">
+                  <div style="width: 362px; height: 39.56px; left: 381px; top: 0px; position: absolute">
+                    <div style="width: 154px; height: 39.56px; left: 0px; top: 0px; position: absolute">
+                      <div style="width: 75px; height: 39.56px; left: 0px; top: 0px; position: absolute">
+                        <div style="width: 75px; height: 39.56px; left: 0px; top: 0px; position: absolute"></div>
+                        <div id="tempSensor2" class="sensor-box temp-sensor2" style="width: 50px; height: 19.78px; left: 13px; top: 9.89px; position: absolute">
+                            <img class="cl54" src="{{url_for('static', filename='img/droplet-solid-24.png')}}" />
+                          <div id="DataTemp" style="width: 30px; left: 20px; top: 1px; position: absolute; text-align: center; color: #242424; font-size: 15.08px; font-family: Lato; font-weight: 700; line-height: 18px; letter-spacing: 0px; word-wrap: break-word"></div>
+                        </div>
+                      </div>
+                      <div style="width: 75px; height: 39.56px; left: 79px; top: 0px; position: absolute">
+                        <div style="width: 75px; height: 39.56px; left: 0px; top: 0px; position: absolute"></div>
+                        <div id="tempSensor" style="width: 52px; height: 21.77px; left: 10px; top: 9px; position: absolute">
+                            <img id="tempSensor" class="cl53" src="{{url_for('static', filename='img/thermometer-solid-24.png')}}" />
+                          <div style="width: 33px; height: 20.88px; left: 19px; top: 0.89px; position: absolute">
+                            <div id="DataTemp1" style="width: 18px; left: 0.50px; top: 0.08px; position: absolute; text-align: center; color: #242424; font-size: 15.08px; font-family: Lato; font-weight: 700; line-height: 18px; letter-spacing: 0px; word-wrap: break-word"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="width: 190px; height: 39.56px; left: 172px; top: 0px; position: absolute">
+                      <div style="width: 190px; height: 39.56px; left: 0px; top: 0px; position: absolute; background: #EDEEF4; border-radius: 11px"></div>
+                      <div style="width: 83px; left: 14px; top: 11px; position: absolute; color: #242424; font-size: 14px; font-family: Muli; font-weight: 600; line-height: 18px; letter-spacing: 0.14px; word-wrap: break-word">Living Room</div>
+                      <img class="cl55" src="{{url_for('static', filename='img/menu-regular-24.png')}}" />
+                    </div>
+                  </div>
+                  <div style="width: 195px; left: 0px; top: 4px; position: absolute; color: #242424; font-size: 24px; font-family: Muli; font-weight: 700; line-height: 30px; letter-spacing: 1.03px; word-wrap: break-word">{{ name }}’s Home</div>
+                </div>
+                <div style="width: 743px; height: 149.47px; left: 0px; top: 61.54px; position: absolute">
+                  <div style="width: 163px; height: 149.47px; left: 0px; top: 0px; position: absolute">
+                    <div class="frame" id="frame1"></div>
+                    <div style="width: 137px; height: 101.11px; left: 6px; top: 24.18px; position: absolute">
+                      <div class="tr">Sensor PIR</div>
+                      <div style="width: 123px; height: 19.78px; left: 14px; top: 0px; position: absolute">
+                        <div class="pir-switch">
+                            <input type="checkbox" id="pir" class="pir-input">
+                            <label for="pir" class="pir-label" onclick="updateText()"></label>
+                            <div id="status-text-pir" class="status-text">OFF</div>
+                        </div>
+                      </div>
+                      <img class="cl48" src="{{url_for('static', filename='img/run-regular-24.png')}}" />
+                    </div>
+                  </div>
+                  <div style="width: 163px; height: 149.47px; left: 194px; top: 0px; position: absolute">
+                    <div class="frame" id="frame2"></div>
+                    <div style="width: 137px; height: 101.11px; left: 6px; top: 24.18px; position: absolute">
+                      <div style="width: 87px; left: 14px; top: 79px; position: absolute; color: #9897AD; font-size: 14px; font-family: Muli; font-weight: 700; line-height: 18px; letter-spacing: 0.14px; word-wrap: break-word">SensorStrike</div>
+                      <div style="width: 123px; height: 19.78px; left: 14px; top: 0px; position: absolute">
+                        <div class="sensor-switch">
+                            <input type="checkbox" id="sensor" class="sensor-input">
+                            <label for="sensor" class="sensor-label" onclick="updateText1()"></label>
+                            <div id="status-text-sensor" class="status-text">OFF</div>
+                        </div>
+                      </div>
+                      <img class="cl49" src="{{url_for('static', filename='img/windows-logo-24.png')}}" />
+                    </div>
+                  </div>
+                  <div style="width: 163px; height: 149.47px; left: 387px; top: 0px; position: absolute">
+                    <div class="frame" id="frame3"></div>
+                    <div style="width: 131px; height: 101.11px; left: 12px; top: 24.18px; position: absolute">
+                      <div style="width: 103px; left: 8px; top: 79px; position: absolute; color: #9897AD; font-size: 14px; font-family: Muli; font-weight: 700; line-height: 18px; letter-spacing: 0.14px; word-wrap: break-word">Temperature</div>
+                      <div style="width: 123px; height: 19.78px; left: 8px; top: 0px; position: absolute">
+                        <div class="temp-switch">
+                            <input type="checkbox" id="temp" class="temp-input">
+                            <label for="temp" class="temp-label" onclick="updateText2()"></label>
+                            <div id="status-text-temp" class="status-text">OFF</div>
+                        </div>
+                      </div>
+                      <img class="cl50" src="{{url_for('static', filename='img/thermometer-solid-24.png')}}" />
+                    </div>
+                  </div>
+                  <div style="width: 163px; height: 149.47px; left: 580px; top: 0px; position: absolute">
+                    <div class="frame" id="frame4"></div>
+                    <div style="width: 134px; height: 101.11px; left: 9px; top: 24.18px; position: absolute">
+                      <div style="width: 42px; left: 11px; top: 79px; position: absolute; color: #9897AD; font-size: 14px; font-family: Muli; font-weight: 700; line-height: 18px; letter-spacing: 0.14px; word-wrap: break-word">Lights</div>
+                      <div style="width: 123px; height: 19.78px; left: 11px; top: 0px; position: absolute">
+                        <div class="lamp-switch">
+                            <input type="checkbox" id="lamp" class="lamp-input">
+                            <label for="lamp" class="lamp-label" onclick="updateText3()"></label>
+                            <div id="status-text-lamp" class="status-text">OFF</div>
+                        </div>
+                      </div>
+                      <img class="cl51" src="{{url_for('static', filename='img/bulb-regular-24.png')}}" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end Body fr1 code -->
+
+            <div class="a1"></div>
+            <div class="a2"></div>
+            <div class="a3"></div>
+            <div class="a4"></div>
+            <div class="NounHome1998078">
+                <div class="Rectangle111"></div>
+                <img class="Rectangle112" src="{{url_for('static', filename='img/home-alt-2-regular-24.png')}}" onclick="changeFrame(2)"/>
+            </div>
+            <div class="Group6">
+            <div class="Group30Copy9">
+                <div class="Rectangle113"></div>
+                <img class="Rectangle114" src="{{url_for('static', filename='img/user-account-solid-24.png')}}" onclick="changeFrame(5)"/>
+            </div>
+            <div class="Group30Copy10">
+                <div class="Rectangle113"></div>
+                <img class="Rectangle115" src="{{url_for('static', filename='img/station-regular-24.png')}}" onclick="changeFrame(6)"/>
+            </div>
+            <div class="Group30Copy6">
+                <div class="Rectangle113"></div>
+                <img class="Rectangle116" src="{{url_for('static', filename='img/signal-5-regular-24.png')}}" onclick="changeFrame(3)"/>
+            </div>
+            <div class="Group30Copy8">
+                <div class="Rectangle113"></div>
+                <img class="Rectangle117" src="{{url_for('static', filename='img/shield-quarter-regular-24.png')}}" onclick="changeFrame(4)"/>
+            </div>
+            <img class="Rectangle119" src="{{url_for('static', filename='img/category-alt-regular-24.png')}}" onclick="changeFrame(1)"/>
+            <div class="Group30Copy5">
+              <div class="Rectangle113"></div>
+              <img class="Rectangle118" src="{{url_for('static', filename='img/log-in-regular-24.png')}}" onclick="changeFrame(7)"/>
+            </div>
+                        
+          </div>
+        
+          
+      </div>
+
+        <!-- start fr2  -->
+          <div class="frameleft" id="fr2">
+            <div class="nr2" ></div>
+            <div class="nr4" ></div>
+            <div class="nr5" ></div>
+            <div class="nr6" ></div>
+            <div class="nr7" >
+              <div class="nr8" ></div>
+              <img class="nr9"  src="{{url_for('static', filename='img/home-alt-2-regular-24.png')}}" onclick="changeFrame(2)"/>
+            </div>
+            <div class="nr10" >
+              <div class="nr11" >
+                <div class="nr12" ></div>
+                <img class="nr13"  src="{{url_for('static', filename='img/user-account-solid-24.png')}}" onclick="changeFrame(5)"/>
+              </div>
+              <div class="nr14" >
+                <div class="nr15" ></div>
+                <img class="nr16"  src="{{url_for('static', filename='img/station-regular-24.png')}}" onclick="changeFrame(6)"/>
+              </div>
+              <div class="nr17" >
+                <div class="nr18" ></div>
+                <img class="nr19" src="{{url_for('static', filename='img/signal-5-regular-24.png')}}" onclick="changeFrame(3)"/>
+              </div>
+              <div class="nr20" >
+                <div class="nr21" ></div>
+                <img class="nr22"  src="{{url_for('static', filename='img/shield-quarter-regular-24.png')}}" onclick="changeFrame(4)"/>
+              </div>
+              <img class="nr23" src="{{url_for('static', filename='img/category-alt-regular-24.png')}}" onclick="changeFrame(1)"/>
+            </div>
+            <div class="nr24" >
+              <div class="nr25" ></div>
+              <img class="nr3" src="{{url_for('static', filename='img/log-in-regular-24.png')}}" onclick="changeFrame(7)"/>
+            </div>
+
+            <!-- start Body fr2 -->
+              <!-- as in ja -->
+                <div class="Frame21" style="width: 786px; height: 868px; left: 178px; top: 156px; position: absolute; border: 1px solid">
+                  <div class="Frame22" style="width: 786px; height: 261px; left: 0px; top: 305px; position: absolute">
+                    <div class="Frame26" style="width: 249px; height: 261px; left: 0px; top: 0px; position: absolute; background: rgba(0, 0, 0, 0.10); border-radius: 25px; overflow: hidden">
+                      <div class="Humidity" style="left: 18px; top: 218px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.50); font-size: 10px; font-family: Capriola; font-weight: 400; word-wrap: break-word">humidity</div>
+                      <div class="Rectangle37" style="width: 215px; height: 40px; left: 17px; top: 13px; position: absolute; border-radius: 15px"></div>
+                      <div class="Rectangle31" style="width: 20px; height: 20px; left: 188px; top: 84px; position: absolute"></div>
+                      <div class="Frame57" style="width: 249px; height: 80px; left: 0px; top: 181px; position: absolute; background: linear-gradient(180deg, rgba(0, 0, 0, 0.11) 0%, rgba(0, 0, 0, 0) 100%); border-top-left-radius: 25px; border-top-right-radius: 25px; overflow: hidden">
+                        <div style="width: 28.03px; height: 55.90px; left: 144.39px; top: 52.98px; position: absolute; transform: rotate(91deg); transform-origin: 0 0; text-align: center; color: rgba(0, 0, 0, 0.29); font-size: 24px; font-family: Andika; font-weight: 400; word-wrap: break-word">></div>
+                        <img class="Icons8Water1001" style="width: 20px; height: 20px; left: 28px; top: 9px; position: absolute" src="{{url_for('static', filename='img/icons8-water-100.png')}}" />
+                        <img class="Icons8Wind1001" style="width: 20px; height: 20px; left: 115px; top: 9px; position: absolute" src="{{url_for('static', filename='img/icons8-wind-100.png')}}" />
+                        <img class="Icons8Cloud1001" style="width: 20px; height: 20px; left: 202px; top: 9px; position: absolute" src="{{url_for('static', filename='img/icons8-cloud-100.png')}}" />
+                        <div class="Wind" style="left: 107px; top: 30px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.50); font-size: 13px; font-family: Capriola; font-weight: 400; word-wrap: break-word">wind</div>
+                        <div class="Precipitation" style="left: 172px; top: 30px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.50); font-size: 11px; font-family: Capriola; font-weight: 400; word-wrap: break-word">precipitation</div>
+                        <div class="KmH" style="left: 116px; top: 47px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.60); font-size: 5px; font-family: Capriola; font-weight: 400; word-wrap: break-word">2km/h</div>
+                        <div style="left: 31px; top: 47px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.60); font-size: 6px; font-family: Capriola; font-weight: 400; word-wrap: break-word">32%</div>
+                        <div style="left: 205px; top: 47px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.60); font-size: 6px; font-family: Capriola; font-weight: 400; word-wrap: break-word">18%</div>
+                      </div>
+                      <img class="Icons8Sun481" style="width: 100px; height: 102.02px; left: 72px; top: 33px; position: absolute" src="{{url_for('static', filename='img/icons8-sun-48.png')}}" />
+                      <div class="C" style="width: 129px; height: 42px; left: 60px; top: 131px; position: absolute; text-align: center; color: black; font-size: 40px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">32 c</div>
+                      <div style="width: 14px; height: 11px; left: 137px; top: 120px; position: absolute; text-align: center; color: black; font-size: 32px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">.</div>
+                      <div class="25" style="width: 55px; height: 22px; left: 188px; top: 11px; position: absolute; text-align: center; color: black; font-size: 13px; font-family: Anton; font-weight: 400; word-wrap: break-word">13:25</div>
+                      <div class="Karaj" style="left: 84px; top: 11px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Capriola; font-weight: 400; word-wrap: break-word">KARAJ</div>
+                    </div>
+                    <div class="Frame27" style="width: 249px; height: 261px; left: 268px; top: 0px; position: absolute; background: rgba(0, 0, 0, 0.10); border-radius: 25px; overflow: hidden">
+                      <div class="Rectangle37" style="width: 215px; height: 40px; left: 17px; top: 13px; position: absolute; border-radius: 15px"></div>
+                      <div class="Rectangle31" style="width: 20px; height: 20px; left: 188px; top: 84px; position: absolute"></div>
+                      <div class="Frame57" style="width: 249px; height: 121px; left: 0px; top: 140px; position: absolute; background: linear-gradient(180deg, rgba(0, 0, 0, 0.11) 0%, rgba(0, 0, 0, 0) 100%); border-top-left-radius: 25px; border-top-right-radius: 25px; overflow: hidden">
+                        <div style="width: 28.03px; height: 55.90px; left: 141.39px; top: 93.98px; position: absolute; transform: rotate(91deg); transform-origin: 0 0; text-align: center; color: rgba(0, 0, 0, 0.29); font-size: 24px; font-family: Andika; font-weight: 400; word-wrap: break-word">></div>
+                        <div class="Rectangle47" style="width: 50px; height: 73px; left: 12px; top: 16px; position: absolute; background: linear-gradient(180deg, #0038FF 0%, rgba(209.31, 209.31, 209.31, 0.73) 100%); border-radius: 5px"></div>
+                        <div class="Rectangle48" style="width: 50px; height: 73px; left: 73px; top: 16px; position: absolute; background: linear-gradient(180deg, #BFBFBF 0%, rgba(255, 255, 255, 0.42) 100%); border-radius: 5px"></div>
+                        <div class="Rectangle49" style="width: 50px; height: 73px; left: 131px; top: 16px; position: absolute; background: linear-gradient(180deg, #BFBFBF 0%, rgba(255, 255, 255, 0.42) 100%); border-radius: 5px"></div>
+                        <div class="Rectangle50" style="width: 50px; height: 73px; left: 187px; top: 16px; position: absolute; background: linear-gradient(180deg, #BFBFBF 0%, rgba(255, 255, 255, 0.42) 100%); border-radius: 5px"></div>
+                        <div class="Today" style="width: 27px; height: 11px; left: 0px; top: 0px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.70); font-size: 7px; font-family: Andika; font-weight: 400; word-wrap: break-word">today</div>
+                        <div class="00" style="left: 27px; top: 78px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.40); font-size: 7px; font-family: Andika; font-weight: 400; word-wrap: break-word">14:00</div>
+                        <div class="00" style="left: 88px; top: 78px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.40); font-size: 7px; font-family: Andika; font-weight: 400; word-wrap: break-word">15:00</div>
+                        <div class="00" style="left: 146px; top: 78px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.40); font-size: 7px; font-family: Andika; font-weight: 400; word-wrap: break-word">16:00</div>
+                        <div class="00" style="left: 202px; top: 78px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.40); font-size: 7px; font-family: Andika; font-weight: 400; word-wrap: break-word">17:00</div>
+                        <img class="Icons8Sun481" style="width: 35px; height: 35.71px; left: 19px; top: 21px; position: absolute" src="{{url_for('static', filename='img/icons8-sun-48.png')}}" />
+                        <img class="Icons8Sun482" style="width: 35px; height: 35.71px; left: 80px; top: 21px; position: absolute" src="{{url_for('static', filename='img/icons8-sun-48.png')}}" />
+                        <img class="Icons8Sun483" style="width: 35px; height: 35.71px; left: 138px; top: 21px; position: absolute" src="{{url_for('static', filename='img/icons8-sun-48.png')}}" />
+                        <img class="Icons8Sun484" style="width: 35px; height: 35.71px; left: 194px; top: 21px; position: absolute" src="{{url_for('static', filename='img/icons8-sun-48.png')}}" />
+                        <div class="C" style="width: 46px; height: 19px; left: 14px; top: 65px; position: absolute; text-align: center; color: black; font-size: 10px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">34 c</div>
+                        <div class="C" style="width: 46px; height: 19px; left: 77px; top: 65px; position: absolute; text-align: center; color: black; font-size: 10px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">35 c</div>
+                        <div class="C" style="width: 46px; height: 19px; left: 135px; top: 65px; position: absolute; text-align: center; color: black; font-size: 10px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">38 c</div>
+                        <div class="C" style="width: 46px; height: 19px; left: 191px; top: 65px; position: absolute; text-align: center; color: black; font-size: 10px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">34 c</div>
+                        <div style="width: 14px; height: 11px; left: 35px; top: 59px; position: absolute; text-align: center; color: black; font-size: 11px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">.</div>
+                        <div style="width: 14px; height: 11px; left: 98px; top: 59px; position: absolute; text-align: center; color: black; font-size: 11px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">.</div>
+                        <div style="width: 14px; height: 11px; left: 156px; top: 59px; position: absolute; text-align: center; color: black; font-size: 11px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">.</div>
+                        <div style="width: 14px; height: 11px; left: 212px; top: 59px; position: absolute; text-align: center; color: black; font-size: 11px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">.</div>
+                      </div>
+                      <div class="25" style="width: 55px; height: 22px; left: 188px; top: 11px; position: absolute; text-align: center; color: black; font-size: 13px; font-family: Anton; font-weight: 400; word-wrap: break-word">13:25</div>
+                      <img class="Icons8Sun481" style="width: 70px; height: 71.41px; left: 13px; top: 56px; position: absolute" src="{{url_for('static', filename='img/icons8-sun-48.png')}}" />
+                      <div class="Karaj" style="left: 29px; top: 42px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.70); font-size: 11px; font-family: Capriola; font-weight: 400; word-wrap: break-word">KARAJ</div>
+                      <div class="Rectangle45" style="width: 154px; height: 100px; left: 94px; top: 31px; position: absolute; background: #FF855F; border-top-left-radius: 10px; border-top-right-radius: 10px"></div>
+                      <img class="Icons8Anemometer801" style="width: 53px; height: 53px; left: 196px; top: 33px; position: absolute" src="{{url_for('static', filename='img/icons8-anemometer-80.png')}}" />
+                      <div class="Rectangle46" style="width: 84px; height: 82px; left: 102px; top: 40px; position: absolute; background: rgba(217, 217, 217, 0.53); border-radius: 10px"></div>
+                      <div class="TodayWeAreWitnessingStrongWindsInTheHighlands" style="width: 59px; height: 37px; left: 114px; top: 65px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.75); font-size: 7px; font-family: Capriola; font-weight: 400; word-wrap: break-word">
+                      <br/>Today we are witnessing strong winds in the highlands</div>
+                      <div class="Warning" style="left: 111px; top: 48px; position: absolute; text-align: center; color: black; font-size: 12px; font-family: Capriola; font-weight: 400; word-wrap: break-word">WARNING</div>
+                      <div class="C" style="width: 46px; height: 19px; left: 25px; top: 125px; position: absolute; text-align: center; color: black; font-size: 10px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">32 c</div>
+                      <div style="width: 14px; height: 11px; left: 47px; top: 119px; position: absolute; text-align: center; color: black; font-size: 11px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">.</div>
+                    </div>
+                    <div class="Frame28" style="width: 249px; height: 261px; left: 537px; top: 0px; position: absolute; background: rgba(0, 0, 0, 0.10); border-radius: 25px; overflow: hidden">
+                      <div class="Rectangle37" style="width: 215px; height: 40px; left: 17px; top: 13px; position: absolute; border-radius: 15px"></div>
+                      <div class="25" style="width: 55px; height: 22px; left: 188px; top: 12px; position: absolute; text-align: center; color: black; font-size: 13px; font-family: Anton; font-weight: 400; word-wrap: break-word">13:25</div>
+                      <div class="Frame59" style="width: 238px; height: 106px; left: 5px; top: 45px; position: absolute; background: #5278FF; border-radius: 15px; overflow: hidden">
+                        <div class="Rectangle31" style="width: 20px; height: 20px; left: 183px; top: 31px; position: absolute"></div>
+                        <img class="Icons8SunBehindCloud481" style="width: 60px; height: 60px; left: 20px; top: 23px; position: absolute" src="{{url_for('static', filename='img/icons8-sun-behind-cloud-48.png')}}" />
+                        <div class="Tomarrow" style="width: 61px; height: 23px; left: 133px; top: 11px; position: absolute; text-align: center; color: white; font-size: 13px; font-family: Andika; font-weight: 400; word-wrap: break-word">tomarrow</div>
+                        <div class="Cloudy" style="width: 61px; height: 23px; left: 67px; top: 72px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.72); font-size: 16px; font-family: Archivo Narrow; font-weight: 400; word-wrap: break-word">cloudy</div>
+                        <div class="C" style="width: 119px; height: 38px; left: 68px; top: 34px; position: absolute; text-align: center; color: white; font-size: 32px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">24 c/</div>
+                        <div style="width: 14px; left: 133px; top: 26px; position: absolute; text-align: center; color: white; font-size: 24px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">.</div>
+                        <div style="width: 14px; left: 190px; top: 30px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.64); font-size: 24px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">.</div>
+                        <div class="C" style="left: 166px; top: 42px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.74); font-size: 24px; font-family: Racing Sans One; font-weight: 400; word-wrap: break-word">31 c</div>
+                      </div>
+                      <div class="Frame57" style="width: 249px; height: 80px; left: 0px; top: 181px; position: absolute; background: linear-gradient(180deg, rgba(0, 0, 0, 0.11) 0%, rgba(0, 0, 0, 0) 100%); border-top-left-radius: 25px; border-top-right-radius: 25px; overflow: hidden">
+                        <div style="width: 28.03px; height: 55.90px; left: 144.39px; top: 52.98px; position: absolute; transform: rotate(91deg); transform-origin: 0 0; text-align: center; color: rgba(0, 0, 0, 0.29); font-size: 24px; font-family: Andika; font-weight: 400; word-wrap: break-word">></div>
+                        <img class="Icons8Water1001" style="width: 20px; height: 20px; left: 28px; top: 9px; position: absolute" src="{{url_for('static', filename='img/icons8-water-100.png')}}" />
+                        <img class="Icons8Wind1001" style="width: 20px; height: 20px; left: 115px; top: 9px; position: absolute" src="{{url_for('static', filename='img/icons8-wind-100.png')}}" />
+                        <img class="Icons8Cloud1001" style="width: 20px; height: 20px; left: 202px; top: 9px; position: absolute" src="{{url_for('static', filename='img/icons8-cloud-100.png')}}" />
+                        <div class="Wind" style="left: 107px; top: 30px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.50); font-size: 13px; font-family: Capriola; font-weight: 400; word-wrap: break-word">wind</div>
+                        <div class="Precipitation" style="left: 172px; top: 30px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.50); font-size: 11px; font-family: Capriola; font-weight: 400; word-wrap: break-word">precipitation</div>
+                        <div class="KmH" style="left: 116px; top: 47px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.60); font-size: 5px; font-family: Capriola; font-weight: 400; word-wrap: break-word">7km/h</div>
+                        <div style="left: 31px; top: 47px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.60); font-size: 6px; font-family: Capriola; font-weight: 400; word-wrap: break-word">47%</div>
+                        <div style="left: 205px; top: 47px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.60); font-size: 6px; font-family: Capriola; font-weight: 400; word-wrap: break-word">69%</div>
+                        <div class="Humidity" style="left: 14px; top: 31px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.50); font-size: 10px; font-family: Capriola; font-weight: 400; word-wrap: break-word">humidity</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Frame23" style="width: 786px; height: 219px; left: 0px; top: 613px; position: absolute; border-radius: 25px; overflow: hidden;">
+                    <div class="GroupCopy6" style="width: 204px; height: 110px; left: 249px; top: 77px; position: absolute">
+                      <div class="Rectangle" style="width: 204px; height: 110px; left: 0px; top: 0px; position: absolute; background: #FF9060; border-radius: 22px"></div>
+                      <div class="Group41" style="width: 179px; height: 72px; left: 11px; top: 19px; position: absolute">
+                        <div class="MusicSystem" style="left: 9px; top: 54px; position: absolute; color: white; font-size: 16px; font-family: Muli; font-weight: 700; line-height: 18px; letter-spacing: 0.16px; word-wrap: break-word">Sensor Strike</div>
+                        <img class="Rectangle14" style="width: 44px; height: 44px; left: 0px; top: 0px; position: absolute" src="{{url_for('static', filename='img/windows-logo-24.png')}}" />
+                      </div>
+                    </div>
+                    <div class="GroupCopy6" style="width: 204px; height: 110px; left: 485px; top: 77px; position: absolute">
+                      <div class="Rectangle" style="width: 204px; height: 110px; left: 0px; top: 0px; position: absolute; background: #F4C427; border-radius: 22px"></div>
+                      <div class="Group41" style="width: 178px; height: 72px; left: 12px; top: 19px; position: absolute">
+                        <div class="Router" style="left: 5px; top: 54px; position: absolute; color: white; font-size: 16px; font-family: Muli; font-weight: 700; line-height: 18px; letter-spacing: 0.16px; word-wrap: break-word">Router</div>
+                        <img class="Rectangle14" style="width: 44px; height: 44px; left: 0px; top: 0px; position: absolute" src="{{url_for('static', filename='img/server-solid-24.png')}}" />
+                      </div>
+                    </div>
+                    <div class="GroupCopy6" style="width: 204px; height: 110px; left: 12px; top: 77px; position: absolute">
+                      <div class="Rectangle" style="width: 204px; height: 110px; left: 0px; top: 0px; position: absolute; background: #7A40F2; border-radius: 22px"></div>
+                      <div class="Group41" style="width: 182px; height: 72px; left: 8px; top: 19px; position: absolute">
+                        <div class="Refridgerator" style="left: 12px; top: 54px; position: absolute; color: white; font-size: 16px; font-family: Muli; font-weight: 700; line-height: 18px; letter-spacing: 0.16px; word-wrap: break-word">Sensor PIR</div>
+                        <img class="Rectangle14" style="width: 44px; height: 44px; left: 0px; top: 0px; position: absolute" src="{{url_for('static', filename='img/run-regular-24.png')}}" />
+                      </div>
+                    </div>
+                    <div class="Rectangle39" style="width: 760px; height: 45px; left: 12px; top: 11px; position: absolute; background: linear-gradient(90deg, #A47BE7 0%, rgba(217, 217, 217, 0) 100%); border-top-left-radius: 15px; border-top-right-radius: 15px"></div>
+                    <div class="ScarletHome" style="left: 20px; top: 7px; position: absolute; color: black; font-size: 30px; font-family: Arya; font-weight: 700; word-wrap: break-word">Scarlet Home :</div>
+                    <div class="Frame56" style="width: 100px; height: 100px; left: 265px; top: 158px; position: absolute"></div>
+                  </div>
+                  <img class="Rectangle7" style="width: 743px; height: 229px; left: 21px; top: 20px; position: absolute; border-radius: 38px" src="{{url_for('static', filename='img/Path.png')}}" />
+                  <div class="WelcomeBackParsa" style="left: 52px; top: 36px; position: absolute; color: black; font-size: 40px; font-family: Arya; font-weight: 700; word-wrap: break-word">Welcome Back Parsa !</div>
+                </div>
+                <div class="Frame27" style="width: 397px; height: 788px; left: 986px; top: 163px; position: absolute; background: rgba(180.07, 167.88, 255, 0.38); border-radius: 6px; overflow: hidden">
+                  <div class="Frame1" style="width: 100px; height: 100px; left: 0px; top: 0px; position: absolute; background: linear-gradient(303deg, #00FFF0 0%, #0057FF 98%); border-radius: 10px; overflow: hidden">
+                    <img class="Frame3702" style="width: 54px; height: 54px; left: 23px; top: 23px; position: absolute" src="{{url_for('static', filename='img/bell-regular-24(1).png')}}" />
+                  </div>
+                  <div class="Notification" style="width: 283px; height: 42px; left: 109px; top: 29px; position: absolute; color: white; font-size: 40px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Notification</div>
+                  <div class="Frame3700" style="width: 397px; height: 100px; left: 0px; top: 0px; position: absolute"></div>
+                  <div class="Frame3701" style="width: 397px; height: 50px; left: 0px; top: 100px; position: absolute"></div>
+                  <div class="Frame6" style="height: 217px; padding: 8px; left: 11px; top: 150px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                    <div class="Single" style="align-self: stretch; padding-top: 9px; padding-bottom: 9px; padding-left: 9px; padding-right: 14px; background: rgba(255, 255, 255, 0.80); border-radius: 16px; overflow: hidden; backdrop-filter: blur(30px); justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                      <div class="Frame2" style="width: 38px; height: 38px; position: relative">
+                        <img class="Ellipse1" style="width: 38px; height: 38px; left: 0px; top: 0px; position: absolute; border-radius: 9999px" src="{{url_for('static', filename='img/run-regular-24.png')}}" />
+                      </div>
+                      <div class="Frame4" style="flex: 1 1 0; flex-direction: column; justify-content: center; align-items: flex-start; gap: 1px; display: inline-flex">
+                        <div class="Frame3" style="align-self: stretch; justify-content: space-between; align-items: flex-end; display: inline-flex">
+                          <div class="Title" style="color: #222222; font-size: 15px; font-family: SF Pro Text; font-weight: 400; word-wrap: break-word">PIR Sensor </div>
+                          <div class="Timestamp" style="opacity: 0.50; text-align: right; color: #3F3F3F; font-size: 12px; font-family: SF Pro Text; font-weight: 500; line-height: 14px; word-wrap: break-word">now</div>
+                        </div>
+                        <div class="Text" style="align-self: stretch; color: #3F3F3F; font-size: 15px; font-family: SF Pro Text; font-weight: 400; word-wrap: break-word">Sensor PIR Detected</div>
+                      </div>
+                    </div>
+                    <div class="Single" style="align-self: stretch; padding-top: 9px; padding-bottom: 9px; padding-left: 9px; padding-right: 14px; background: rgba(255, 255, 255, 0.80); border-radius: 16px; overflow: hidden; backdrop-filter: blur(30px); justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                      <img class="Set" style="width: 38px; height: 38px; position: relative" src="{{url_for('static', filename='img/thermometer-solid-24.png')}}" />
+                      <div class="Frame4" style="flex: 1 1 0; flex-direction: column; justify-content: center; align-items: flex-start; gap: 1px; display: inline-flex">
+                        <div class="Frame3" style="align-self: stretch; justify-content: space-between; align-items: flex-end; display: inline-flex">
+                          <div class="Title" style="color: #222222; font-size: 15px; font-family: SF Pro Text; font-weight: 400; word-wrap: break-word">Temp Sensor Limit</div>
+                          <div class="Timestamp" style="opacity: 0.50; text-align: right; color: #3F3F3F; font-size: 12px; font-family: SF Pro Text; font-weight: 500; line-height: 14px; word-wrap: break-word">2m ago</div>
+                        </div>
+                        <div class="Text" style="align-self: stretch; color: #3F3F3F; font-size: 15px; font-family: SF Pro Text; font-weight: 400; word-wrap: break-word">Temp Sensor arrived to your set point 23 and fan auto on.</div>
+                      </div>
+                    </div>
+                    <div class="Single" style="align-self: stretch; padding-top: 9px; padding-bottom: 9px; padding-left: 9px; padding-right: 14px; background: rgba(255, 255, 255, 0.80); border-radius: 16px; overflow: hidden; backdrop-filter: blur(30px); justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                      <img class="Photo" style="width: 38px; height: 38px; position: relative" src="{{url_for('static', filename='img/windows-logo-24.png')}}" />
+                      <div class="Frame4" style="flex: 1 1 0; flex-direction: column; justify-content: center; align-items: flex-start; gap: 1px; display: inline-flex">
+                        <div class="Frame3" style="align-self: stretch; justify-content: space-between; align-items: flex-end; display: inline-flex">
+                          <div class="Title" style="color: #222222; font-size: 15px; font-family: SF Pro Text; font-weight: 400; word-wrap: break-word">Strike Sensor</div>
+                          <div class="Timestamp" style="opacity: 0.50; text-align: right; color: #3F3F3F; font-size: 12px; font-family: SF Pro Text; font-weight: 500; line-height: 14px; word-wrap: break-word">3m ago</div>
+                        </div>
+                        <div class="Text" style="align-self: stretch; color: #3F3F3F; font-size: 15px; font-family: SF Pro Text; font-weight: 400; word-wrap: break-word">Sensor Strike Detected</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- end Body code fr2 -->
+          </div>
+        </div>
+            <!-- start fr3 -->
+        <div class="frameleft" id="fr3">
+            <div class="qw2"></div>
+            <div class="qw3"></div>
+            <div class="qw4"></div>
+            <div class="qw5"></div>
+            <div class="qw6">
+              <div class="qw7"></div>
+              <img class="qw8" src="{{url_for('static', filename='img/home-alt-2-regular-24.png')}}" onclick="changeFrame(2)"/>
+            </div>
+            <div class="qw9">
+              <div class="qw10">
+                <div class="qw11"></div>
+                <img class="qw12" src="{{url_for('static', filename='img/user-account-solid-24.png')}}" onclick="changeFrame(5)"/>
+              </div>
+              <div class="qw13">
+                <div class="qw14"></div>
+                <img class="qw15" src="{{url_for('static', filename='img/station-regular-24.png')}}" onclick="changeFrame(6)"/>
+              </div>
+              <div class="qw16">
+                <div class="qw17"></div>
+                <img class="qw18" src="{{url_for('static', filename='img/signal-5-regular-24.png')}}" onclick="changeFrame(3)"/>
+              </div>
+              <div class="qw19">
+                <div class="qw20"></div>
+                <img class="qw21" src="{{url_for('static', filename='img/shield-quarter-regular-24.png')}}" onclick="changeFrame(4)"/>
+              </div>
+              <img class="qw22" src="{{url_for('static', filename='img/category-alt-regular-24.png')}}" onclick="changeFrame(1)"/>
+            </div>
+            <div class="qw23">
+              <div class="qw24"></div>
+              <img class="qw25" src="{{url_for('static', filename='img/log-in-regular-24.png')}}" onclick="changeFrame(7)"/>
+            </div>
+            <!-- start body fr3 -->
+
+            <!-- end body fr3 -->
+        </div>
+              <!-- end fr3 -->
+      <div class="frameleft" id="fr4">
+        <!-- start line in fr4  -->
+        <div style="width: 800px; height: 15px; left: 350px; top: 210px; position: absolute">
+          <div class="whb-row whb-general-header whb-sticky-row whb-without-bg whb-without-border whb-color-dark whb-flex-flex-middle">
+          </div>
+        </div>
+        <!-- end line in fr4 -->
+        <div class="q1"></div>
+        <div class="q2"></div>
+        <div class="q3"></div>
+        <div class="q5"></div>
+        <div class="q6">
+          <div class="q7"></div>
+          <img class="q8" src="{{url_for('static', filename='img/home-alt-2-regular-24.png')}}" onclick="changeFrame(2)"/>
+        </div>
+        <div class="q9">
+          <div class="q10">
+            <div class="q11"></div>
+            <img class="q12" src="{{url_for('static', filename='img/user-account-solid-24.png')}}" onclick="changeFrame(5)"/>
+          </div>
+          <div class="q13">
+            <div class="q14"></div>
+            <img class="q15" src="{{url_for('static', filename='img/station-regular-24.png')}}" onclick="changeFrame(6)"/>
+          </div>
+          <div class="q16">
+            <div class="q17"></div>
+            <img class="q18" src="{{url_for('static', filename='img/signal-5-regular-24.png')}}" onclick="changeFrame(3)"/>
+          </div>
+          <div class="q19">
+            <div class="q20"></div>
+            <img class="q21" src="{{url_for('static', filename='img/shield-quarter-regular-24.png')}}" onclick="changeFrame(4)"/>
+          </div>
+          <img class="q22" src="{{url_for('static', filename='img/category-alt-regular-24.png')}}" onclick="changeFrame(1)"/>
+        </div>
+        <div class="q23">
+          <div class="q24"></div>
+          <img class="q25" src="{{url_for('static', filename='img/log-in-regular-24.png')}}" onclick="changeFrame(7)"/>
+        </div>
+
+        <!-- start Body fr4 -->
+          <div class="Frame48" style="width: 1322px; height: 120px; left: 118px; top: 100px; position: absolute">
+            <div class="Frame54" style="width: 1322px; height: 55px; left: 0px; top: 0px; position: absolute">
+              <div class="Group4" style="width: 1260px; height: 50px; left: 18px; top: 5px; position: absolute">
+                <img class="Rectangle" style="width: 1140px; height: 50px; left: 60px; top: 0px; position: absolute; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 15px" src="{{url_for('static', filename='img/tt_bg.png')}}" />
+                <div class="ApiToken" style="width: 125px; height: 18px; left: 76px; top: 17px; position: absolute; color: black; font-size: 20px; font-family: Muli; font-weight: 700; line-height: 18px; letter-spacing: 0.14px; word-wrap: break-word">API TOKEN :</div>
+                <div style="width: 502px; height: 17px; left: 379px; top: 15px; position: absolute; color: #6100FF; font-size: 20px; font-family: Muli; font-weight: 700; line-height: 17px; letter-spacing: 0.14px; word-wrap: break-word">{{ token }}</div>
+              </div>
+            </div>
+          </div>
+          <div class="Frame49" style="width: 1322px; height: 159px; left: 118px; top: 235px; position: absolute">
+            <div class="Group4" style="width: 406px; height: 43px; left: 0px; top: 0px; position: absolute">
+              <div class="Rectangle" style="width: 406px; height: 43px; left: 0px; top: 0px; position: absolute; background: #EDEEF4; border-radius: 15px"></div>
+              <div class="Frame50" style="width: 343px; height: 43px; left: 63px; top: 0px; position: absolute">
+                <div class="Search" style="width: 281px; height: 17px; left: 4px; top: 13px; position: absolute; color: #ACAFB5; font-size: 14px; font-family: Muli; font-weight: 600; line-height: 17px; letter-spacing: 0.14px; word-wrap: break-word">{{ email }}</div>
+              </div>
+              <div class="Frame51" style="width: 63px; height: 43px; left: 0px; top: 0px; position: absolute">
+                <div class="Search" style="width: 48px; height: 17px; left: 10px; top: 13px; position: absolute; color: #ACAFB5; font-size: 14px; font-family: Muli; font-weight: 600; line-height: 17px; letter-spacing: 0.14px; word-wrap: break-word">Email :</div>
+              </div>
+            </div>
+            <div class="Group6" style="width: 137px; height: 43px; left: 436px; top: 0px; position: absolute">
+              <div class="Rectangle" style="width: 137px; height: 43px; left: 0px; top: 0px; position: absolute; background: #EDEEF4; border-radius: 15px"></div>
+              <div class="Frame51" style="width: 63px; height: 43px; left: 6px; top: 0px; position: absolute">
+                <div class="Search" style="width: 48px; height: 17px; left: 10px; top: 13px; position: absolute; color: #ACAFB5; font-size: 14px; font-family: Muli; font-weight: 600; line-height: 17px; letter-spacing: 0.14px; word-wrap: break-word">Name :</div>
+              </div>
+              <div class="Frame53" style="width: 64px; height: 43px; left: 69px; top: 0px; position: absolute">
+                <div class="Search" style="width: 39.70px; height: 17px; left: 12.15px; top: 13px; position: absolute; color: #ACAFB5; font-size: 14px; font-family: Muli; font-weight: 600; line-height: 17px; letter-spacing: 0.14px; word-wrap: break-word">{{ name }}</div>
+              </div>
+            </div>
+            <div class="Group5" style="width: 406px; height: 43px; left: 0px; top: 58px; position: absolute">
+            </div>
+            <div class="Frame52" style="width: 406px; height: 47px; left: 0px; top: 112px; position: absolute">
+            </div>
+          </div>
+        </div>
+
+      <!-- end fr4 -->
+      <!-- start fr5 -->
+      <div class="frameleft" id="fr5">
+        <div class="w1"></div>
+        <div class="w2"></div>
+        <div class="w3"></div>
+        <div class="w4"></div>
+        <div class="w5">
+          <div class="w6"></div>
+          <img class="w7" src="{{url_for('static', filename='img/home-alt-2-regular-24.png')}}" onclick="changeFrame(2)"/>
+        </div>
+        <div class="w8">
+          <div class="w9">
+            <div class="w10"></div>
+            <img class="w11" src="{{url_for('static', filename='img/user-account-solid-24.png')}}" onclick="changeFrame(5)"/>
+          </div>
+          <div class="w12">
+            <div class="w13"></div>
+            <img class="w14" src="{{url_for('static', filename='img/station-regular-24.png')}}" onclick="changeFrame(6)"/>
+          </div>
+          <div class="w15">
+            <div class="w16"></div>
+            <img class="w17" src="{{url_for('static', filename='img/signal-5-regular-24.png')}}" onclick="changeFrame(3)"/>
+          </div>
+          <div class="w18">
+            <div class="w19"></div>
+            <img class="w20" src="{{url_for('static', filename='img/shield-quarter-regular-24.png')}}" onclick="changeFrame(4)"/>
+          </div>
+          <img class="w21" src="{{url_for('static', filename='img/category-alt-regular-24.png')}}" onclick="changeFrame(1)"/>
+        </div>
+        <div class="w22">
+          <div class="w23"></div>
+          <img class="w24" src="{{url_for('static', filename='img/log-in-regular-24.png')}}" onclick="changeFrame(7)"/>
+        </div>
+        <!-- start Body code fr5 -->
+        <div class="Frame60" style="width: 1322px; height: 922px; left: 118px; top: 102px; position: absolute"></div>
+          <div class="Error" style="width: 923px; height: 221px; left: 317px; top: 401px; position: absolute">
+            <div class="Rectangle16" style="width: 923px; height: 221px; left: 0px; top: 0px; position: absolute; opacity: 0.10; background: #EB5757; border-radius: 20px"></div>
+            <div class="Rectangle17" style="width: 10px; height: 221px; left: 0px; top: 0px; position: absolute; background: #EB5757; border-radius: 10px"></div>
+            <div class="Group5" style="width: 606px; height: 127px; left: 257px; top: 47px; position: absolute">
+              <div class="Error" style="width: 149px; height: 43px; left: 0px; top: 0px; position: absolute; color: #2F3032; font-size: 36px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Error</div>
+              <div class="PaymentForOrderCouldNotBeProceedPleaseTryAgain" style="width: 606px; left: 0px; top: 55px; position: absolute; color: #2F3032; font-size: 24px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Payment for order could not be proceed. Please try again.</div>
+            </div>
+            <div class="Ellipse5" style="width: 134px; height: 134px; left: 73px; top: 43px; position: absolute; background: #EB5757; border-radius: 9999px"></div>
+            <img class="Vector" style="width: 89px; height: 89px; left: 96px; top: 66px; position: absolute" src="{{url_for('static', filename='img/Vector.png')}}" />
+          </div>
+        </div>
+      <!-- end Body fr5 -->  
+      
+      <!-- end fr5 -->
+      <div class="frameleft" id="fr6">
+        <div class="se1"></div>
+        <div class="se2"></div>
+        <div class="se3"></div>
+        <div class="se4"></div>
+        <div class="se5">
+          <div class="se6"></div>
+          <img class="se7" src="{{url_for('static', filename='img/home-alt-2-regular-24.png')}}" onclick="changeFrame(2)"/>
+        </div>
+        <div class="se8">
+          <div class="se9">
+            <div class="se10"></div>
+            <img class="se11" src="{{url_for('static', filename='img/user-account-solid-24.png')}}" onclick="changeFrame(5)"/>
+          </div>
+          <div class="se12">
+            <div class="se13"></div>
+            <img class="se14" src="{{url_for('static', filename='img/station-regular-24.png')}}" onclick="changeFrame(6)"/>
+          </div>
+          <div class="se15">
+            <div class="se16"></div>
+            <img class="se17" src="{{url_for('static', filename='img/signal-5-regular-24.png')}}" onclick="changeFrame(3)"/>
+          </div>
+          <div class="se18">
+            <div class="se19"></div>
+            <img class="se20" src="{{url_for('static', filename='img/shield-quarter-regular-24.png')}}" onclick="changeFrame(4)"/>
+          </div>
+          <img class="se21" src="{{url_for('static', filename='img/category-alt-regular-24.png')}}" onclick="changeFrame(1)"/>
+        </div>
+        <div class="se22">
+          <div class="se23"></div>
+          <img class="se24" src="{{url_for('static', filename='img/log-in-regular-24.png')}}" onclick="changeFrame(7)"/>
+        </div>
+
+      <!-- start Body fr6 -->
+      <div style="width: 1322px; height: 280px; left: 118px; top: 100px; position: absolute">
+          <div style="width: 406px; height: 43px; left: 0px; top: 0px; position: absolute">
+              <div style="width: 406px; height: 43px; left: 0px; top: 0px; position: absolute; background: #EDEEF4; border-radius: 15px"></div>
+              <div style="width: 343px; height: 43px; left: 63px; top: 0px; position: absolute">
+                  <div style="width: 281px; height: 17px; left: 4px; top: 13px; position: absolute; color: #ACAFB5; font-size: 14px; font-family: Muli; font-weight: 600; line-height: 17px; letter-spacing: 0.14px; word-wrap: break-word">{{ email }}</div>
+              </div>
+              <div style="width: 63px; height: 43px; left: 0px; top: 0px; position: absolute">
+                  <div style="width: 48px; height: 17px; left: 10px; top: 13px; position: absolute; color: #ACAFB5; font-size: 14px; font-family: Muli; font-weight: 600; line-height: 17px; letter-spacing: 0.14px; word-wrap: break-word">Email :</div>
+              </div>
+          </div>
+          <div style="width: 406px; height: 43px; left: 0px; top: 58px; position: absolute">
+              <div style="width: 406px; height: 43px; left: 0px; top: 0px; position: absolute; background: #EDEEF4; border-radius: 15px"></div>
+              <div style="width: 127px; height: 43px; left: 0px; top: 0px; position: absolute">
+                  <div style="width: 121.48px; height: 17px; left: 6px; top: 13px; position: absolute; color: #ACAFB5; font-size: 14px; font-family: Muli; font-weight: 600; line-height: 17px; letter-spacing: 0.14px; word-wrap: break-word">Phone Number :</div>
+              </div>
+              <div style="width: 279px; height: 43px; left: 127px; top: 0px; position: absolute">
+                  <div style="width: 106px; height: 17px; left: 3px; top: 13px; position: absolute; color: #ACAFB5; font-size: 14px; font-family: Muli; font-weight: 600; line-height: 17px; letter-spacing: 0.14px; word-wrap: break-word">{{ phone }}</div>
+              </div>
+          </div>
+          <div style="width: 204px; height: 110px; left: 10px; top: 140px; position: absolute">
+              <div style="width: 204px; height: 110px; left: 0px; top: 0px; position: absolute; background: #7A40F2; border-radius: 22px"></div>
+              <div style="width: 178px; height: 72px; left: 12px; top: 19px; position: absolute">
+                  <div style="left: 5px; top: 54px; position: absolute; color: white; font-size: 16px; font-family: Muli; font-weight: 700; line-height: 18px; letter-spacing: 0.16px; word-wrap: break-word">Email Notification</div>
+                  <img style="width: 44px; height: 44px; left: 0px; top: 0px; position: absolute" src="{{url_for('static', filename='img/Gmail_Logo_512px.png')}}" />
+                  <div class="gmail-switch">
+                    <input type="checkbox" id="gmail" class="gmail-input">
+                    <label for="gmail" class="gmail-label" onclick="updateText4()"></label>
+                  </div>
+              </div>
+          </div>
+          <div style="width: 204px; height: 110px; left: 254px; top: 140px; position: absolute">
+              <div style="width: 204px; height: 110px; left: 0px; top: 0px; position: absolute; background: #3ACBE9; border-radius: 22px"></div>
+              <div style="width: 178px; height: 72px; left: 12px; top: 19px; position: absolute">
+                  <div style="left: 5px; top: 54px; position: absolute; color: white; font-size: 16px; font-family: Muli; font-weight: 700; line-height: 18px; letter-spacing: 0.16px; word-wrap: break-word">Telegram Notification</div>
+                  <img style="width: 44px; height: 44px; left: 0px; top: 0px; position: absolute" src="{{url_for('static', filename='img/telegram.png')}}"/>
+                  <div class="gmail-switch">
+                    <input type="checkbox" id="telegram" class="gmail-input">
+                    <label for="telegram" class="gmail-label" onclick="updateText5()"></label>
+                  </div> 
+              </div>
+          </div>
+      </div>
+      <!-- end Body fr6 -->
+    </div>
+    <!-- end fr6 -->
+    <div class="frameleft" id="fr7">
+      <button type="button" class="btn" onclick="window.location.href ='/sigin'">Logout</button>
+    </div>
+  </div>
+        
+      <!-- end fr7 -->
+
+      <!-- Start Body code -->
+
+        
+    
+    <!-- end Body code -->
+    
+      <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+</html>
