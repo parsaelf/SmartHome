@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Login Easyshop</title>
+    <link rel="stylesheet" href="static\\css\\RegisterStyleSheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="registerForm" action="" onsubmit="submitForm()">
+            <h1>Login</h1>
+            <div class="input-box">
+                <i class='bx bxs-user'></i>
+                <input type="tel" id="phoneNumber" placeholder="Phone number" required>
+            </div>
+            <div class="input-box">
+                <i class='bx bxs-user'></i>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <i class='bx bxs-lock-alt'></i>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="remmember-forgot">
+                <label><input type="checkbox" id="notif">Receive Notification</label>
+                <label><input type="checkbox" id="telegram">telegram</label>
+            </div>
+            <button type="button" class="btn" onclick="submitForm()">Login</button>
+            <div class="register">
+                <p>Register ?<a href="http://127.0.0.1:5000/singup">Register</a></p>
+            </div>
+        </form>
+    </div>
+    <div id="errorBar" class="error-bar">
+        <span class="close-button" onclick="closeErrorBar()">✖</span>
+        <span id="errorMessage"></span>
+    </div>
+    <!-- <div id="hello" class="error-bar">
+        <span class="close-button" onclick="closeErrorBar()">✖</span>
+        <span id="helloMessage"></span>
+    </div> -->
+    
+    
+    <script>
+        function showErrorBar(message) {
+            var errorBar = document.getElementById("errorBar");
+            var errorMessage = document.getElementById("errorMessage");
+    
+            // تنظیم متن پیام خطا
+            errorMessage.innerHTML = message;
+    
+            // نمایش نوار قرمز
+            errorBar.style.display = "block";
+        }
+
+        // function showSuccesBar(message) {
+        //     var errorBar = document.getElementById("hello");
+        //     var errorMessage = document.getElementById("helloMessage");
+    
+        //     // تنظیم متن پیام خطا
+        //     errorMessage.innerHTML = message;
+    
+        //     // نمایش نوار قرمز
+        //     errorBar.style.display = "block";
+        // }
+
+        function closeErrorBar() {
+            var errorBar = document.getElementById("errorBar");
+    
+            // بستن نوار قرمز
+            errorBar.style.display = "none";
+        }
+        function getUserInfoFromCookie() {
+            const cookies = document.cookie.split(';');
+            const userInfo = {};
+            cookies.forEach(cookie => {
+                const [key, value] = cookie.trim().split('=');
+                userInfo[key] = value;
+            });
+            return userInfo;
+        }
+        function setUserInfoToSession(email, phoneNumber) {
+            // ذخیره اطلاعات در جلسه
+            sessionStorage.setItem('email', email);
+            sessionStorage.setItem('phoneNumber', phoneNumber);
+        }
+   
+        async function submitForm() {
+            var phoneNumber = document.getElementById("phoneNumber").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+    
+            var formData = {
+                phoneNumber: phoneNumber,
+                email: email,
+                password: password,
+            };
+    
+            try {
+                const response = await fetch('http://127.0.0.1:5000/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+    
+                const responseData = await response.json();
+    
+                if ('error' in responseData) {
+                    // در صورت وجود خطا، نمایش نوار قرمز
+                    showErrorBar(responseData.error);
+                }
+                if ('status' in responseData){
+                    window.location.href = 'http://127.0.0.1:5000/account';
+                }
+                console.log(responseData);
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        
+
+        function showErrorNotification(message) {
+            Toastify({
+                text: message,
+                duration: 3000, // مدت زمان نمایش پیام به میلی‌ثانیه (در اینجا 3 ثانیه)
+                newWindow: true,
+                close: true,
+                gravity: "top", // جا به کجا باید نمایش داده شود (top, bottom, center, left, right)
+                position: "left", // موقعیت نمایش (top-left, top-center, top-right, bottom-left, bottom-center, bottom-right)
+                backgroundColor: "linear-gradient(to right, #ff416c, #ff4b2b)", // رنگ پس زمینه نوتیفیکیشن
+                stopOnFocus: true,
+                onClick: function () {
+                    // عملیاتی که باید انجام شود در صورت کلیک بر روی نوتیفیکیشن
+                },
+            }).showToast();
+        }
+
+        function showErrorNotification(message) {
+            // تابع جدید برای نمایش خطا
+            Toastify({
+                text: message,
+                // ... (مشابه تابع قبلی)
+            }).showToast();
+        }
+
+
+
+    </script>
+    
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</html>
